@@ -17,9 +17,9 @@ namespace MvcWebAPI.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public Project Get(int id)
         {
-            return "value";
+            return new Project() {  Job_ID=1,Job_Name="Bharat", Description="Kumar"};
         }
 
         // POST api/values
