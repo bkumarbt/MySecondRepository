@@ -17,9 +17,9 @@ namespace MvcWebAPI.Controllers
         }
 
         // GET api/values/5
-        public Project Get(int id)
+        public string Get(int id)
         {
-            return new Project();
+            return "value";
         }
 
         // POST api/values
