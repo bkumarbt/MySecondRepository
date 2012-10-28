@@ -8,7 +8,7 @@ using MvcWebAPI.Models;
 
 namespace MvcWebAPI.Controllers
 {
-    public class ValuesController : ApiController
+    public class ProjectController : ApiController
     {
         // GET api/values
         public ProjectList Get()

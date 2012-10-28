@@ -17,7 +17,7 @@ namespace MvcWebAPI
             routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { controller= "Project", id = RouteParameter.Optional }
             );
 
             routes.MapRoute(
@@ -27,4 +27,4 @@ namespace MvcWebAPI
             );
         }
     }
-}
+}   
