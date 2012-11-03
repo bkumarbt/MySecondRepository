@@ -11,13 +11,9 @@ namespace MvcWebAPI.Controllers
     public class ProjectController : ApiController
     {
         // GET api/values
-        [Queryable]
-        public IQueryable<Project> Get()
+        public ProjectList Get()
         {
-            ProjectRepository repository = new ProjectRepository();
-            return repository.Projects.AsQueryable(); ;
-           // return Utility.GetProject();
-
+            return Utility.GetProject();
         }
 
         // GET api/values/5

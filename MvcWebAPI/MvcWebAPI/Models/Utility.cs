@@ -38,23 +38,4 @@ namespace MvcWebAPI.Models
         
 
     }
-
-    public class ProjectRepository
-    {
-        public IEnumerable<Project> Projects {get;set;}
-
-        public ProjectRepository()
-        {
-            Projects = new List<Project>()
-                {
-                   new Project() { Job_ID = 1,Job_Name = "abc", Description = "nothing" , Current = null},
-                   new Project() { Job_ID = 2, Job_Name = "abc2", Description = "nothing", Current = null },
-                   new Project() { Job_ID = 3,Job_Name = "abc3", Description = "nothing", Current = null }
-                };
-            
-
-        }
-
-
-    }
 }
